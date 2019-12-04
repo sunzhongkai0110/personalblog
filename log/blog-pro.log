@@ -1,0 +1,8 @@
+2019-11-12 19:53:05.502  INFO 5692 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on SunZhongkai with PID 5692 (D:\IntelliJ_IDEA_Web_Workspace\blog\target\classes started by SunZhongkai in D:\IntelliJ_IDEA_Web_Workspace\blog)
+2019-11-12 19:53:05.508  INFO 5692 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: pro
+2019-11-12 19:53:08.961  WARN 5692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-12 19:53:09.368  INFO 5692 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 5.108 seconds (JVM running for 8.737)
+2019-11-12 19:59:14.276  INFO 13352 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on SunZhongkai with PID 13352 (D:\IntelliJ_IDEA_Web_Workspace\blog\target\classes started by SunZhongkai in D:\IntelliJ_IDEA_Web_Workspace\blog)
+2019-11-12 19:59:14.281  INFO 13352 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: pro
+2019-11-12 19:59:17.690  WARN 13352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-12 19:59:18.070  INFO 13352 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 5.021 seconds (JVM running for 8.677)

@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+
+spriing:
+  resources:
+    static-locations: classpath:/
+
+
+
+comment.avatar: /images/avatar.png

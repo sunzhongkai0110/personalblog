@@ -1,0 +1,960 @@
+2019-12-03 12:39:03.530  INFO 13967 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 13967 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 12:39:03.556 DEBUG 13967 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 12:39:03.557  INFO 13967 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 12:39:03.709  INFO 13967 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 12:39:03.710  INFO 13967 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 12:39:03.710  INFO 13967 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 12:39:05.308  INFO 13967 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 12:39:05.457  INFO 13967 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139ms. Found 5 repository interfaces.
+2019-12-03 12:39:05.976  INFO 13967 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 12:39:06.787  INFO 13967 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 12:39:06.817  INFO 13967 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 12:39:06.818  INFO 13967 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 12:39:06.946  INFO 13967 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 12:39:06.947  INFO 13967 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3237 ms
+2019-12-03 12:39:07.525  INFO 13967 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 12:39:07.931  INFO 13967 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 12:39:08.349  INFO 13967 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 12:39:08.540  INFO 13967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 12:39:09.320  INFO 13967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 12:39:09.366  INFO 13967 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 12:39:10.744  INFO 13967 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 12:39:10.751  INFO 13967 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 12:39:10.780  INFO 13967 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 12:39:11.397  WARN 13967 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+2019-12-03 12:39:11.398  INFO 13967 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 12:39:11.402  INFO 13967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 12:39:11.409  INFO 13967 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 12:39:11.412  INFO 13967 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-03 12:39:11.426  INFO 13967 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-03 12:39:11.435 ERROR 13967 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.szk.blog.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:142)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:209)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:574)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:567)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:569)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:559)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:559)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.szk.blog.entity.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:718)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy109.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 63 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.szk.blog.entity.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.QueryException.generateQueryException(QueryException.java:120)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+	... 71 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+
+	at org.hibernate.hql.internal.ast.tree.SelectClause.initializeExplicitSelectClause(SelectClause.java:161)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.useSelectClause(HqlSqlWalker.java:1018)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.processQuery(HqlSqlWalker.java:786)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:677)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 77 common frames omitted
+
+2019-12-03 12:41:12.117  INFO 14231 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 14231 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 12:41:12.121 DEBUG 14231 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 12:41:12.122  INFO 14231 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 12:41:12.250  INFO 14231 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 12:41:12.250  INFO 14231 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 12:41:12.251  INFO 14231 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 12:41:13.062  INFO 14231 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 12:41:13.145  INFO 14231 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 5 repository interfaces.
+2019-12-03 12:41:13.467  INFO 14231 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 12:41:13.870  INFO 14231 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 12:41:13.878  INFO 14231 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 12:41:13.879  INFO 14231 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 12:41:13.958  INFO 14231 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 12:41:13.958  INFO 14231 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1707 ms
+2019-12-03 12:41:14.245  INFO 14231 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 12:41:14.293  INFO 14231 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 12:41:14.377  INFO 14231 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 12:41:14.465  INFO 14231 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 12:41:14.763  INFO 14231 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 12:41:14.777  INFO 14231 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 12:41:15.594  INFO 14231 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 12:41:15.600  INFO 14231 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 12:41:15.647  INFO 14231 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 12:41:16.090  WARN 14231 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+2019-12-03 12:41:16.091  INFO 14231 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 12:41:16.094  INFO 14231 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 12:41:16.103  INFO 14231 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 12:41:16.106  INFO 14231 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-03 12:41:16.118  INFO 14231 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-03 12:41:16.126 ERROR 14231 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'blogServiceImpl': Unsatisfied dependency expressed through field 'blogRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.szk.blog.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'blogRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.szk.blog.dao.BlogRepository.findGroupYear()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:142)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:209)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:574)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:567)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:569)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:559)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:559)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.szk.blog.entity.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:718)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy109.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 63 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+ [select function('data_format',b.updateTime,'%Y') as year from com.szk.blog.entity.Blog b group by function('data_format',b.updateTime,'%Y') order by year desc ]
+	at org.hibernate.QueryException.generateQueryException(QueryException.java:120)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+	... 71 common frames omitted
+Caused by: org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.MethodNode 
+ \-[METHOD_CALL] MethodNode: 'function (data_format)'
+    +-[METHOD_NAME] IdentNode: 'data_format' {originalText=data_format}
+    \-[EXPR_LIST] SqlNode: 'exprList'
+       +-[DOT] DotNode: 'blog0_.update_time' {propertyName=updateTime,dereferenceType=PRIMITIVE,getPropertyPath=updateTime,path=b.updateTime,tableAlias=blog0_,className=com.szk.blog.entity.Blog,classAlias=b}
+       |  +-[ALIAS_REF] IdentNode: 'blog0_.id' {alias=b, className=com.szk.blog.entity.Blog, tableAlias=blog0_}
+       |  \-[IDENT] IdentNode: 'updateTime' {originalText=updateTime}
+       \-[QUOTED_STRING] LiteralNode: ''%Y''
+
+	at org.hibernate.hql.internal.ast.tree.SelectClause.initializeExplicitSelectClause(SelectClause.java:161)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.useSelectClause(HqlSqlWalker.java:1018)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.processQuery(HqlSqlWalker.java:786)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:677)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:313)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:261)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:272)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 77 common frames omitted
+
+2019-12-03 20:02:01.716  INFO 16300 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 16300 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 20:02:01.723 DEBUG 16300 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 20:02:01.724  INFO 16300 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 20:02:01.829  INFO 16300 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 20:02:01.830  INFO 16300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 20:02:01.831  INFO 16300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 20:02:02.795  INFO 16300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 20:02:02.914  INFO 16300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 5 repository interfaces.
+2019-12-03 20:02:03.317  INFO 16300 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 20:02:03.831  INFO 16300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 20:02:03.840  INFO 16300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 20:02:03.840  INFO 16300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 20:02:03.925  INFO 16300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 20:02:03.925  INFO 16300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2093 ms
+2019-12-03 20:02:04.220  INFO 16300 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 20:02:04.271  INFO 16300 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 20:02:04.370  INFO 16300 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 20:02:04.457  INFO 16300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 20:02:04.816  INFO 16300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 20:02:04.834  INFO 16300 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 20:02:05.806  INFO 16300 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 20:02:05.811  INFO 16300 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 20:02:05.843  INFO 16300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 20:02:06.871  WARN 16300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 20:02:07.408  INFO 16300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 20:02:07.543  INFO 16300 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 20:02:07.972  INFO 16300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 20:02:07.976  INFO 16300 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 7.43 seconds (JVM running for 8.345)
+2019-12-03 20:02:26.540  INFO 16300 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 20:02:26.541  INFO 16300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 20:02:26.562  INFO 16300 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-12-03 20:02:26.640  INFO 16300 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}])
+2019-12-03 20:02:26.822  WARN 16300 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 20:02:26.846  WARN 16300 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 20:02:26.866  INFO 16300 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 20:02:26.866  INFO 16300 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 20:02:29.786  INFO 16300 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 20:02:29.869  WARN 16300 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1305, SQLState: 42000
+2019-12-03 20:02:29.869 ERROR 16300 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : FUNCTION blog.data_format does not exist
+2019-12-03 20:02:29.875  INFO 16300 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 20:02:29.880 ERROR 16300 --- [http-nio-8080-exec-5] c.s.b.h.ControllerExceptionHandler       : Request URL:http://127.0.0.1:8080/archives, Exception:{}
+
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy127.findByYear(Unknown Source)
+	at com.szk.blog.service.BlogServiceImpl.archiveBlog(BlogServiceImpl.java:166)
+	at com.szk.blog.service.BlogServiceImpl$$FastClassBySpringCGLIB$$162c0765.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
+	at com.szk.blog.service.BlogServiceImpl$$EnhancerBySpringCGLIB$$b4c5548f.archiveBlog(<generated>)
+	at com.szk.blog.web.ArchiveShowController.archives(ArchiveShowController.java:22)
+	at com.szk.blog.web.ArchiveShowController$$FastClassBySpringCGLIB$$b8aa352c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.szk.blog.web.ArchiveShowController$$EnhancerBySpringCGLIB$$7edee091.archives(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2292)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2050)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2012)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:953)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:354)
+	at org.hibernate.loader.Loader.doList(Loader.java:2815)
+	at org.hibernate.loader.Loader.doList(Loader.java:2797)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2629)
+	at org.hibernate.loader.Loader.list(Loader.java:2624)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1396)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1558)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1526)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:126)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:88)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:154)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:142)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:618)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	... 82 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: FUNCTION blog.data_format does not exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 111 common frames omitted
+
+2019-12-03 20:02:29.882  WARN 16300 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet]
+2019-12-03 21:38:47.390  INFO 16300 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 21:38:47.393  INFO 16300 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 21:38:47.402  INFO 16300 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 21:38:47.413  INFO 16300 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 21:38:52.805  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 17244 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 21:38:52.808 DEBUG 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 21:38:52.809  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 21:38:52.879  INFO 17244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 21:38:52.880  INFO 17244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 21:38:52.880  INFO 17244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 21:38:53.716  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 21:38:53.819  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 5 repository interfaces.
+2019-12-03 21:38:54.169  INFO 17244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 21:38:54.610  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 21:38:54.618  INFO 17244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 21:38:54.618  INFO 17244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 21:38:54.690  INFO 17244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 21:38:54.690  INFO 17244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1809 ms
+2019-12-03 21:38:54.958  INFO 17244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 21:38:55.005  INFO 17244 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 21:38:55.088  INFO 17244 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 21:38:55.159  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 21:38:55.457  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 21:38:55.471  INFO 17244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 21:38:56.329  INFO 17244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 21:38:56.335  INFO 17244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 21:38:56.362  INFO 17244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 21:38:57.212  WARN 17244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 21:38:57.678  INFO 17244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 21:38:57.777  INFO 17244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 21:38:58.060  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 21:38:58.063  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 6.284 seconds (JVM running for 7.202)
+2019-12-03 21:39:03.513  INFO 17244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 21:39:03.513  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 21:39:03.530  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-03 21:39:03.570  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 21:39:03.680  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 21:39:03.680  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:05:31.318  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 22:05:31.365  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:05:31.367  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:05:33.482  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/blog/29, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , blog, args=[29, {}])
+2019-12-03 22:05:33.679  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:05:33.680  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:blog
+2019-12-03 22:05:34.481  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/comments/29, ip=127.0.0.1, classMethod=com.szk.blog.web.CommentController , comments, args=[29, {}])
+2019-12-03 22:05:34.556  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:05:34.556  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-12-03 22:05:40.064  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/blog/30, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , blog, args=[30, {}])
+2019-12-03 22:05:40.167  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:05:40.167  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:blog
+2019-12-03 22:05:40.946  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/comments/30, ip=127.0.0.1, classMethod=com.szk.blog.web.CommentController , comments, args=[30, {}])
+2019-12-03 22:05:40.950  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:05:40.951  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-12-03 22:10:54.889  INFO 17244 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:10:54.892  INFO 17244 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:10:54.899  INFO 17244 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 22:10:54.914  INFO 17244 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 22:10:55.543  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 17244 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 22:10:55.543 DEBUG 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 22:10:55.544  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 22:10:55.817  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 22:10:55.840  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 5 repository interfaces.
+2019-12-03 22:10:55.914  INFO 17244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 22:10:56.014  WARN 17244 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-12-03 22:10:56.036  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 22:10:56.038  INFO 17244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 22:10:56.038  INFO 17244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 22:10:56.046  INFO 17244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 22:10:56.047  INFO 17244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 500 ms
+2019-12-03 22:10:56.155  INFO 17244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 22:10:56.164  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-03 22:10:56.198  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-03 22:10:56.199  INFO 17244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 22:10:56.691  INFO 17244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 22:10:56.692  INFO 17244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:10:56.720  INFO 17244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 22:10:57.191  WARN 17244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 22:10:57.319  INFO 17244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:10:57.364  INFO 17244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 22:10:57.553  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 22:10:57.554  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 2.113 seconds (JVM running for 1926.693)
+2019-12-03 22:10:57.556  INFO 17244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-03 22:11:01.852  INFO 17244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 22:11:01.854  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 22:11:01.872  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-12-03 22:11:01.876  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 22:11:01.908  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:01.908  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:11:03.954  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}])
+2019-12-03 22:11:03.989  WARN 17244 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:11:03.999  WARN 17244 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:11:04.009  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:04.009  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 22:11:05.637  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:11:05.658  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:05.658  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:11:07.678  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:11:07.707  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:07.707  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 22:11:09.323  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 22:11:09.340  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:09.340  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:11:10.812  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 22:11:10.815  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:10.815  INFO 17244 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 22:11:48.724  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 22:11:48.725  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:11:48.725  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 22:50:20.774  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 22:50:20.774  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:50:20.775  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 22:52:17.580  INFO 17244 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:52:17.594  INFO 17244 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:52:17.595  INFO 17244 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-12-03 22:52:17.620  INFO 17244 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-12-03 22:52:18.215  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 17244 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 22:52:18.216 DEBUG 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 22:52:18.217  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 22:52:18.537  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 22:52:18.565  INFO 17244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 5 repository interfaces.
+2019-12-03 22:52:18.669  INFO 17244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 22:52:18.792  WARN 17244 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-12-03 22:52:18.843  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 22:52:18.844  INFO 17244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 22:52:18.844  INFO 17244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 22:52:18.856  INFO 17244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 22:52:18.857  INFO 17244 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 634 ms
+2019-12-03 22:52:18.957  INFO 17244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 22:52:18.965  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-12-03 22:52:18.986  INFO 17244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-12-03 22:52:18.987  INFO 17244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 22:52:19.262  INFO 17244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 22:52:19.263  INFO 17244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:52:19.286  INFO 17244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 22:52:20.021  WARN 17244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 22:52:20.406  INFO 17244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:52:20.516  INFO 17244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 22:52:20.859  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 22:52:20.859  INFO 17244 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 2.717 seconds (JVM running for 4409.999)
+2019-12-03 22:52:20.861  INFO 17244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-03 22:52:23.556  INFO 17244 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 22:52:23.560  INFO 17244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 22:52:23.577  INFO 17244 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-03 22:52:23.579  INFO 17244 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 22:52:23.586  INFO 17244 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:23.587  INFO 17244 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 22:52:24.155  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:52:24.174  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:24.174  INFO 17244 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:52:39.802  INFO 17244 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 22:52:39.826  INFO 17244 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:39.826  INFO 17244 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:52:40.380  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:52:40.388  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:40.388  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:52:42.316  INFO 17244 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:52:42.324  WARN 17244 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:52:42.344  INFO 17244 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:42.345  INFO 17244 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 22:52:42.873  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:52:42.885  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:42.885  INFO 17244 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:52:46.089  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:52:46.097  WARN 17244 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:52:46.112  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:46.112  INFO 17244 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:52:46.595  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:52:46.599  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:46.599  INFO 17244 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:52:49.293  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}])
+2019-12-03 22:52:49.320  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:49.320  INFO 17244 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 22:52:49.833  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:52:49.839  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:52:49.839  INFO 17244 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:17.525  INFO 17244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:54:17.526  INFO 17244 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:54:17.527  INFO 17244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-12-03 22:54:17.552  INFO 17244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-12-03 22:54:23.911  INFO 19070 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 19070 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 22:54:23.916 DEBUG 19070 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 22:54:23.917  INFO 19070 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 22:54:24.037  INFO 19070 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 22:54:24.038  INFO 19070 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 22:54:24.039  INFO 19070 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 22:54:25.041  INFO 19070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 22:54:25.145  INFO 19070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 5 repository interfaces.
+2019-12-03 22:54:25.515  INFO 19070 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 22:54:25.964  INFO 19070 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 22:54:25.972  INFO 19070 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 22:54:25.973  INFO 19070 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 22:54:26.035  INFO 19070 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 22:54:26.035  INFO 19070 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1996 ms
+2019-12-03 22:54:26.303  INFO 19070 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 22:54:26.354  INFO 19070 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 22:54:26.440  INFO 19070 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 22:54:26.517  INFO 19070 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 22:54:26.827  INFO 19070 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 22:54:26.840  INFO 19070 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 22:54:27.714  INFO 19070 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 22:54:27.724  INFO 19070 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 22:54:27.785  INFO 19070 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 22:54:28.633  WARN 19070 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 22:54:29.052  INFO 19070 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 22:54:29.154  INFO 19070 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 22:54:29.429  INFO 19070 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 22:54:29.433  INFO 19070 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 6.555 seconds (JVM running for 7.313)
+2019-12-03 22:54:34.050  INFO 19070 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 22:54:34.051  INFO 19070 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 22:54:34.067  INFO 19070 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-12-03 22:54:34.121  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 22:54:34.253  WARN 19070 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:54:34.277  WARN 19070 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 22:54:34.291  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:34.292  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 22:54:35.385  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:35.396  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:35.397  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:40.060  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:54:40.087  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:40.087  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:54:40.637  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:40.646  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:40.647  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:44.722  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}])
+2019-12-03 22:54:44.736  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:44.737  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:54:45.303  INFO 19070 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:45.312  INFO 19070 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:45.313  INFO 19070 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:47.720  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/6, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 6, {}])
+2019-12-03 22:54:47.734  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:47.735  INFO 19070 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:54:48.298  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:48.305  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:48.306  INFO 19070 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:52.417  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/3, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}])
+2019-12-03 22:54:52.438  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:52.438  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 22:54:52.959  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:52.967  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:52.968  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:54.377  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 22:54:54.413  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:54.413  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 22:54:54.971  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:54.981  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:54.985  INFO 19070 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:54:58.169  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/24, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 24, {}])
+2019-12-03 22:54:58.189  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:58.189  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 22:54:58.730  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:54:58.736  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:54:58.736  INFO 19070 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:55:00.995  INFO 19070 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 22:55:01.033  INFO 19070 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:55:01.033  INFO 19070 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 22:55:01.493  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:55:01.499  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:55:01.499  INFO 19070 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 22:55:04.002  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 22:55:04.005  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:55:04.006  INFO 19070 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 22:55:04.505  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 22:55:04.515  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 22:55:04.515  INFO 19070 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:07:37.146  INFO 19070 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 23:07:37.149  INFO 19070 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 23:07:37.153  INFO 19070 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 23:07:37.161  INFO 19070 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 23:07:41.105  INFO 19368 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 19368 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 23:07:41.124 DEBUG 19368 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 23:07:41.125  INFO 19368 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 23:07:41.211  INFO 19368 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 23:07:41.211  INFO 19368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 23:07:41.212  INFO 19368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 23:07:42.173  INFO 19368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 23:07:42.275  INFO 19368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88ms. Found 5 repository interfaces.
+2019-12-03 23:07:42.599  INFO 19368 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 23:07:43.041  INFO 19368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 23:07:43.049  INFO 19368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 23:07:43.050  INFO 19368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 23:07:43.123  INFO 19368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 23:07:43.124  INFO 19368 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1908 ms
+2019-12-03 23:07:43.379  INFO 19368 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 23:07:43.426  INFO 19368 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 23:07:43.508  INFO 19368 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 23:07:43.580  INFO 19368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 23:07:43.894  INFO 19368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 23:07:43.907  INFO 19368 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 23:07:44.726  INFO 19368 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 23:07:44.731  INFO 19368 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 23:07:44.761  INFO 19368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 23:07:45.629  WARN 19368 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 23:07:46.070  INFO 19368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 23:07:46.166  INFO 19368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 23:07:46.452  INFO 19368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 23:07:46.455  INFO 19368 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 6.351 seconds (JVM running for 7.221)
+2019-12-03 23:07:50.291  INFO 19368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 23:07:50.292  INFO 19368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 23:07:50.309  INFO 19368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-12-03 23:07:50.342  INFO 19368 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 23:07:50.349  INFO 19368 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:07:50.350  INFO 19368 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 23:07:51.446  INFO 19368 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:07:51.569  INFO 19368 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:07:51.569  INFO 19368 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:17:08.139  INFO 19368 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 23:17:08.141  INFO 19368 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 23:17:08.146  INFO 19368 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 23:17:08.163  INFO 19368 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-03 23:19:42.596  INFO 21207 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 21207 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-12-03 23:19:42.600 DEBUG 21207 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-03 23:19:42.601  INFO 21207 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-12-03 23:19:42.702  INFO 21207 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-03 23:19:42.702  INFO 21207 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-03 23:19:42.703  INFO 21207 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-03 23:19:43.680  INFO 21207 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 23:19:43.799  INFO 21207 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 5 repository interfaces.
+2019-12-03 23:19:44.162  INFO 21207 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 23:19:44.589  INFO 21207 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-03 23:19:44.597  INFO 21207 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-03 23:19:44.597  INFO 21207 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-03 23:19:44.668  INFO 21207 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-03 23:19:44.668  INFO 21207 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1965 ms
+2019-12-03 23:19:44.918  INFO 21207 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-03 23:19:44.962  INFO 21207 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-03 23:19:45.042  INFO 21207 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-03 23:19:45.111  INFO 21207 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 23:19:45.403  INFO 21207 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 23:19:45.417  INFO 21207 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-12-03 23:19:46.253  INFO 21207 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-03 23:19:46.259  INFO 21207 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 23:19:46.286  INFO 21207 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-03 23:19:47.148  WARN 21207 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 23:19:47.577  INFO 21207 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 23:19:47.680  INFO 21207 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-03 23:19:47.954  INFO 21207 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-03 23:19:47.957  INFO 21207 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 6.273 seconds (JVM running for 7.077)
+2019-12-03 23:19:52.283  INFO 21207 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-03 23:19:52.283  INFO 21207 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-03 23:19:52.302  INFO 21207 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-12-03 23:19:52.336  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/about, ip=127.0.0.1, classMethod=com.szk.blog.web.AboutShowController , about, args=[])
+2019-12-03 23:19:52.342  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:19:52.343  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:about
+2019-12-03 23:19:53.382  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:19:53.520  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:19:53.523  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:19:57.491  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/archives, ip=127.0.0.1, classMethod=com.szk.blog.web.ArchiveShowController , archives, args=[{}])
+2019-12-03 23:19:57.540  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:19:57.541  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:archives
+2019-12-03 23:19:58.042  INFO 21207 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:19:58.055  INFO 21207 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:19:58.058  INFO 21207 --- [http-nio-8080-exec-7] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:19:59.579  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 23:19:59.595  WARN 21207 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 23:19:59.651  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:19:59.651  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 23:20:00.242  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:20:00.250  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:20:00.251  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:20:00.801  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 23:20:00.814  WARN 21207 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-03 23:20:00.829  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:20:00.829  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:20:01.334  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:20:01.348  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:20:01.349  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:20:01.908  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 23:20:01.936  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:20:01.937  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 23:20:02.459  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:20:02.467  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:20:02.467  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:22:53.550  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 23:22:53.583  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:22:53.583  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 23:22:54.236  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:22:54.245  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:22:54.245  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:22:56.037  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/6, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 6, {}])
+2019-12-03 23:22:56.056  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:22:56.056  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:22:56.568  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:22:56.574  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:22:56.574  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:23:05.142  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/3, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}])
+2019-12-03 23:23:05.163  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:23:05.163  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:23:05.644  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:23:05.651  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:23:05.652  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:26:51.785  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 23:26:51.809  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:26:51.810  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 23:26:52.452  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:26:52.460  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:26:52.460  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:26:54.328  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 23:26:54.341  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:26:54.342  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:26:54.845  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:26:54.850  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:26:54.851  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:27:05.845  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/6, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 6, {}])
+2019-12-03 23:27:05.858  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:05.858  INFO 21207 --- [http-nio-8080-exec-2] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:27:06.488  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:27:06.495  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:06.495  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:27:09.310  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.szk.blog.web.TypeShowController , types, args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}])
+2019-12-03 23:27:09.321  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:09.321  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:types
+2019-12-03 23:27:09.851  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:27:09.858  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:09.859  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:27:13.559  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/tags/-1, ip=127.0.0.1, classMethod=com.szk.blog.web.TagShowController , Tags, args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}])
+2019-12-03 23:27:13.578  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:13.578  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:tags
+2019-12-03 23:27:14.109  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:27:14.118  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:27:14.118  INFO 21207 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:31:16.681  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/blog/29, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , blog, args=[29, {}])
+2019-12-03 23:31:16.859  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:31:16.860  INFO 21207 --- [http-nio-8080-exec-3] com.szk.blog.aspect.LogAspect            : Result:blog
+2019-12-03 23:31:17.449  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:31:17.456  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:31:17.457  INFO 21207 --- [http-nio-8080-exec-6] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:31:17.607  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/comments/29, ip=127.0.0.1, classMethod=com.szk.blog.web.CommentController , comments, args=[29, {}])
+2019-12-03 23:31:17.674  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:31:17.675  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:blog :: commentList
+2019-12-03 23:32:16.597  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 23:32:16.622  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:16.622  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 23:32:17.251  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:32:17.258  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:17.258  INFO 21207 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:32:20.377  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2019-12-03 23:32:20.399  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:20.401  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:index
+2019-12-03 23:32:20.918  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:32:20.924  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:20.925  INFO 21207 --- [http-nio-8080-exec-10] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:32:24.254  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/blog/46, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , blog, args=[46, {}])
+2019-12-03 23:32:24.393  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:24.393  INFO 21207 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:blog
+2019-12-03 23:32:24.869  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/footer/newblogs, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , newblogs, args=[{}])
+2019-12-03 23:32:24.874  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-12-03 23:32:24.874  INFO 21207 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:_fragments :: newblogList
+2019-12-03 23:33:54.654  INFO 21207 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 23:33:54.656  INFO 21207 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 23:33:54.659  INFO 21207 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 23:33:54.666  INFO 21207 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

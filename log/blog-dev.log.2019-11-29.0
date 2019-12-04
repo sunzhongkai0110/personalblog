@@ -1,0 +1,70 @@
+2019-11-29 19:14:06.841  INFO 4773 --- [restartedMain] com.szk.blog.BlogApplication             : Starting BlogApplication on sunzhongkai-Lenovo-Erazer-Z41-70 with PID 4773 (/home/sunzhongkai/code/blog/target/classes started by sunzhongkai in /home/sunzhongkai/code/blog)
+2019-11-29 19:14:06.864 DEBUG 4773 --- [restartedMain] com.szk.blog.BlogApplication             : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-11-29 19:14:06.865  INFO 4773 --- [restartedMain] com.szk.blog.BlogApplication             : The following profiles are active: dev
+2019-11-29 19:14:06.915  INFO 4773 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/home/sunzhongkai/localrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-29 19:14:06.916  INFO 4773 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-29 19:14:06.916  INFO 4773 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-29 19:14:08.728  INFO 4773 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-29 19:14:08.872  INFO 4773 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 4 repository interfaces.
+2019-11-29 19:14:09.504  INFO 4773 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-29 19:14:10.371  INFO 4773 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-29 19:14:10.402  INFO 4773 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-29 19:14:10.403  INFO 4773 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-29 19:14:10.528  INFO 4773 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-29 19:14:10.528  INFO 4773 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3611 ms
+2019-11-29 19:14:11.088  INFO 4773 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-11-29 19:14:11.364  INFO 4773 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-11-29 19:14:11.670  INFO 4773 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-11-29 19:14:11.839  INFO 4773 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-29 19:14:12.685  INFO 4773 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-29 19:14:12.729  INFO 4773 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2019-11-29 19:14:14.128  INFO 4773 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-11-29 19:14:14.134  INFO 4773 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-29 19:14:14.169  INFO 4773 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-29 19:14:15.131  WARN 4773 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-29 19:14:15.596  INFO 4773 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-29 19:14:15.707  INFO 4773 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-29 19:14:16.142  INFO 4773 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-29 19:14:16.145  INFO 4773 --- [restartedMain] com.szk.blog.BlogApplication             : Started BlogApplication in 11.411 seconds (JVM running for 14.638)
+2019-11-29 19:14:44.912  INFO 4773 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-29 19:14:44.912  INFO 4773 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-29 19:14:44.925  INFO 4773 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-29 19:14:45.416  INFO 4773 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:14:45.690  WARN 4773 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-29 19:14:45.726  WARN 4773 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-11-29 19:14:45.773  INFO 4773 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:14:45.773  INFO 4773 --- [http-nio-8080-exec-1] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:14:57.354  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/search, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , search, args=[Page request [number: 0, size 2, sort: updateTime: DESC], spring, {}])
+2019-11-29 19:14:57.393  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:14:57.394  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:search
+2019-11-29 19:15:04.083  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/search, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , search, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 测试, {}])
+2019-11-29 19:15:04.096  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:04.096  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:search
+2019-11-29 19:15:07.445  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:07.482  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:07.483  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:18.936  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 2, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:18.969  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:18.969  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:20.504  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 3, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:20.531  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:20.531  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:23.330  INFO 4773 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 2, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:23.355  INFO 4773 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:23.356  INFO 4773 --- [http-nio-8080-exec-9] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:25.425  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:25.450  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:25.450  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:26.901  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 0, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:26.928  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:26.928  INFO 4773 --- [http-nio-8080-exec-8] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 19:15:31.340  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/search, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , search, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 测试, {}])
+2019-11-29 19:15:31.348  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:31.348  INFO 4773 --- [http-nio-8080-exec-4] com.szk.blog.aspect.LogAspect            : Result:search
+2019-11-29 19:15:33.970  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Request:LogAspect.RequestStLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.szk.blog.web.IndexController , index, args=[Page request [number: 1, size 2, sort: updateTime: DESC], {}])
+2019-11-29 19:15:33.997  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : -----------doAfter----------------
+2019-11-29 19:15:33.997  INFO 4773 --- [http-nio-8080-exec-5] com.szk.blog.aspect.LogAspect            : Result:index
+2019-11-29 21:16:08.759  INFO 4773 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-29 21:16:08.760  INFO 4773 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-29 21:16:08.764  INFO 4773 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-29 21:16:08.773  INFO 4773 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
